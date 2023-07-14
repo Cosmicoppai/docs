@@ -4,6 +4,8 @@ layout: null
 # Release notes generated from _data/redirects.yml
 {% if site.baseurl == "/docs" %}
 / /docs/ 301!
+/docs/api/* https://cockroachdb-api-docs.netlify.com/docs/:splat 200!
+/docs/tutorials/* https://cockroachdb-tutorials-docs.netlify.com/docs/:splat 200!
 {% assign major_versions = site.data.versions | map: "major_version" -%}
 
 {%- for r in site.data.redirects -%}
